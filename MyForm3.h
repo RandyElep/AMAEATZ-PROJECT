@@ -205,6 +205,12 @@ private: System::Windows::Forms::Label^ label36;
 private: System::Windows::Forms::Label^ label35;
 private: System::Windows::Forms::Label^ label39;
 private: System::Windows::Forms::Label^ label38;
+private: System::Windows::Forms::Panel^ panel4;
+private: System::Windows::Forms::Button^ btnDailySales;
+private: System::Windows::Forms::Button^ btnmonthlysales;
+private: System::Windows::Forms::Button^ btnweeklysales;
+
+
 
 	   int kikiamIndex;
 
@@ -233,6 +239,15 @@ private: System::Windows::Forms::Label^ label38;
 			this->btn1 = (gcnew System::Windows::Forms::Button());
 			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->panel2 = (gcnew System::Windows::Forms::Panel());
+			this->panel4 = (gcnew System::Windows::Forms::Panel());
+			this->btnDailySales = (gcnew System::Windows::Forms::Button());
+			this->panel8 = (gcnew System::Windows::Forms::Panel());
+			this->cmbPayment = (gcnew System::Windows::Forms::ComboBox());
+			this->txtCOST = (gcnew System::Windows::Forms::TextBox());
+			this->txtCHANGE = (gcnew System::Windows::Forms::TextBox());
+			this->label7 = (gcnew System::Windows::Forms::Label());
+			this->label6 = (gcnew System::Windows::Forms::Label());
+			this->label5 = (gcnew System::Windows::Forms::Label());
 			this->panel7 = (gcnew System::Windows::Forms::Panel());
 			this->txtTOTAL = (gcnew System::Windows::Forms::TextBox());
 			this->txtSUB = (gcnew System::Windows::Forms::TextBox());
@@ -245,13 +260,6 @@ private: System::Windows::Forms::Label^ label38;
 			this->label39 = (gcnew System::Windows::Forms::Label());
 			this->label38 = (gcnew System::Windows::Forms::Label());
 			this->listBox1 = (gcnew System::Windows::Forms::ListBox());
-			this->panel8 = (gcnew System::Windows::Forms::Panel());
-			this->cmbPayment = (gcnew System::Windows::Forms::ComboBox());
-			this->txtCOST = (gcnew System::Windows::Forms::TextBox());
-			this->txtCHANGE = (gcnew System::Windows::Forms::TextBox());
-			this->label7 = (gcnew System::Windows::Forms::Label());
-			this->label6 = (gcnew System::Windows::Forms::Label());
-			this->label5 = (gcnew System::Windows::Forms::Label());
 			this->panel5 = (gcnew System::Windows::Forms::Panel());
 			this->panel11 = (gcnew System::Windows::Forms::Panel());
 			this->label37 = (gcnew System::Windows::Forms::Label());
@@ -316,21 +324,24 @@ private: System::Windows::Forms::Label^ label38;
 			this->imgpancitcanton = (gcnew System::Windows::Forms::PictureBox());
 			this->panel6 = (gcnew System::Windows::Forms::Panel());
 			this->panel12 = (gcnew System::Windows::Forms::Panel());
-			this->btnRESET = (gcnew System::Windows::Forms::Button());
-			this->btnSave = (gcnew System::Windows::Forms::Button());
-			this->btnEXIT = (gcnew System::Windows::Forms::Button());
 			this->btnOPEN = (gcnew System::Windows::Forms::Button());
 			this->btnTOTAL = (gcnew System::Windows::Forms::Button());
+			this->btnEXIT = (gcnew System::Windows::Forms::Button());
+			this->btnSave = (gcnew System::Windows::Forms::Button());
+			this->btnRESET = (gcnew System::Windows::Forms::Button());
 			this->saveFileDialog1 = (gcnew System::Windows::Forms::SaveFileDialog());
 			this->openFileDialog1 = (gcnew System::Windows::Forms::OpenFileDialog());
 			this->imageList1 = (gcnew System::Windows::Forms::ImageList(this->components));
+			this->btnweeklysales = (gcnew System::Windows::Forms::Button());
+			this->btnmonthlysales = (gcnew System::Windows::Forms::Button());
 			this->panel1->SuspendLayout();
 			this->panel9->SuspendLayout();
 			this->panel2->SuspendLayout();
+			this->panel4->SuspendLayout();
+			this->panel8->SuspendLayout();
 			this->panel7->SuspendLayout();
 			this->panel3->SuspendLayout();
 			this->panel10->SuspendLayout();
-			this->panel8->SuspendLayout();
 			this->panel5->SuspendLayout();
 			this->panel11->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox15))->BeginInit();
@@ -557,12 +568,118 @@ private: System::Windows::Forms::Label^ label38;
 			// panel2
 			// 
 			this->panel2->BorderStyle = System::Windows::Forms::BorderStyle::FixedSingle;
+			this->panel2->Controls->Add(this->panel4);
 			this->panel2->Controls->Add(this->panel8);
 			this->panel2->Controls->Add(this->panel7);
-			this->panel2->Location = System::Drawing::Point(12, 443);
+			this->panel2->Location = System::Drawing::Point(12, 452);
 			this->panel2->Name = L"panel2";
-			this->panel2->Size = System::Drawing::Size(680, 314);
+			this->panel2->Size = System::Drawing::Size(670, 314);
 			this->panel2->TabIndex = 1;
+			// 
+			// panel4
+			// 
+			this->panel4->BackColor = System::Drawing::SystemColors::ActiveBorder;
+			this->panel4->BorderStyle = System::Windows::Forms::BorderStyle::FixedSingle;
+			this->panel4->Controls->Add(this->btnmonthlysales);
+			this->panel4->Controls->Add(this->btnweeklysales);
+			this->panel4->Controls->Add(this->btnDailySales);
+			this->panel4->Location = System::Drawing::Point(3, 3);
+			this->panel4->Name = L"panel4";
+			this->panel4->Size = System::Drawing::Size(662, 87);
+			this->panel4->TabIndex = 65;
+			// 
+			// btnDailySales
+			// 
+			this->btnDailySales->Font = (gcnew System::Drawing::Font(L"Cooper Black", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->btnDailySales->Location = System::Drawing::Point(3, 44);
+			this->btnDailySales->Name = L"btnDailySales";
+			this->btnDailySales->Size = System::Drawing::Size(196, 42);
+			this->btnDailySales->TabIndex = 37;
+			this->btnDailySales->Text = L"DAILYSALES";
+			this->btnDailySales->UseVisualStyleBackColor = true;
+			this->btnDailySales->Click += gcnew System::EventHandler(this, &MyForm3::btnDailySales_Click);
+			// 
+			// panel8
+			// 
+			this->panel8->BackColor = System::Drawing::SystemColors::ActiveBorder;
+			this->panel8->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->panel8->Controls->Add(this->cmbPayment);
+			this->panel8->Controls->Add(this->txtCOST);
+			this->panel8->Controls->Add(this->txtCHANGE);
+			this->panel8->Controls->Add(this->label7);
+			this->panel8->Controls->Add(this->label6);
+			this->panel8->Controls->Add(this->label5);
+			this->panel8->Location = System::Drawing::Point(337, 96);
+			this->panel8->Name = L"panel8";
+			this->panel8->Size = System::Drawing::Size(316, 208);
+			this->panel8->TabIndex = 3;
+			// 
+			// cmbPayment
+			// 
+			this->cmbPayment->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 20.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->cmbPayment->FormattingEnabled = true;
+			this->cmbPayment->Location = System::Drawing::Point(191, 16);
+			this->cmbPayment->Name = L"cmbPayment";
+			this->cmbPayment->Size = System::Drawing::Size(118, 39);
+			this->cmbPayment->TabIndex = 41;
+			this->cmbPayment->SelectedIndexChanged += gcnew System::EventHandler(this, &MyForm3::cmbPayment_SelectedIndexChanged);
+			// 
+			// txtCOST
+			// 
+			this->txtCOST->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 20.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->txtCOST->Location = System::Drawing::Point(191, 87);
+			this->txtCOST->Name = L"txtCOST";
+			this->txtCOST->Size = System::Drawing::Size(107, 38);
+			this->txtCOST->TabIndex = 40;
+			this->txtCOST->TextAlign = System::Windows::Forms::HorizontalAlignment::Center;
+			this->txtCOST->TextChanged += gcnew System::EventHandler(this, &MyForm3::txtCOST_TextChanged);
+			// 
+			// txtCHANGE
+			// 
+			this->txtCHANGE->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 20.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->txtCHANGE->Location = System::Drawing::Point(191, 148);
+			this->txtCHANGE->Name = L"txtCHANGE";
+			this->txtCHANGE->Size = System::Drawing::Size(107, 38);
+			this->txtCHANGE->TabIndex = 39;
+			this->txtCHANGE->TextAlign = System::Windows::Forms::HorizontalAlignment::Center;
+			this->txtCHANGE->TextChanged += gcnew System::EventHandler(this, &MyForm3::txtCHANGE_TextChanged);
+			// 
+			// label7
+			// 
+			this->label7->AutoSize = true;
+			this->label7->Font = (gcnew System::Drawing::Font(L"Bernard MT Condensed", 24, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label7->Location = System::Drawing::Point(1, 148);
+			this->label7->Name = L"label7";
+			this->label7->Size = System::Drawing::Size(114, 38);
+			this->label7->TabIndex = 38;
+			this->label7->Text = L"CHANGE";
+			// 
+			// label6
+			// 
+			this->label6->AutoSize = true;
+			this->label6->Font = (gcnew System::Drawing::Font(L"Bernard MT Condensed", 24, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label6->Location = System::Drawing::Point(3, 17);
+			this->label6->Name = L"label6";
+			this->label6->Size = System::Drawing::Size(181, 38);
+			this->label6->TabIndex = 37;
+			this->label6->Text = L"PAY METHOD";
+			// 
+			// label5
+			// 
+			this->label5->AutoSize = true;
+			this->label5->Font = (gcnew System::Drawing::Font(L"Bernard MT Condensed", 24, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label5->Location = System::Drawing::Point(12, 83);
+			this->label5->Name = L"label5";
+			this->label5->Size = System::Drawing::Size(78, 38);
+			this->label5->TabIndex = 34;
+			this->label5->Text = L"COST";
 			// 
 			// panel7
 			// 
@@ -574,16 +691,16 @@ private: System::Windows::Forms::Label^ label38;
 			this->panel7->Controls->Add(this->label3);
 			this->panel7->Controls->Add(this->txtTAX);
 			this->panel7->Controls->Add(this->label2);
-			this->panel7->Location = System::Drawing::Point(16, 12);
+			this->panel7->Location = System::Drawing::Point(6, 96);
 			this->panel7->Name = L"panel7";
-			this->panel7->Size = System::Drawing::Size(325, 284);
+			this->panel7->Size = System::Drawing::Size(325, 208);
 			this->panel7->TabIndex = 2;
 			// 
 			// txtTOTAL
 			// 
 			this->txtTOTAL->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 20.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->txtTOTAL->Location = System::Drawing::Point(186, 196);
+			this->txtTOTAL->Location = System::Drawing::Point(186, 151);
 			this->txtTOTAL->Name = L"txtTOTAL";
 			this->txtTOTAL->Size = System::Drawing::Size(108, 38);
 			this->txtTOTAL->TabIndex = 38;
@@ -594,7 +711,7 @@ private: System::Windows::Forms::Label^ label38;
 			// 
 			this->txtSUB->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 20.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->txtSUB->Location = System::Drawing::Point(186, 121);
+			this->txtSUB->Location = System::Drawing::Point(186, 87);
 			this->txtSUB->Name = L"txtSUB";
 			this->txtSUB->Size = System::Drawing::Size(108, 38);
 			this->txtSUB->TabIndex = 37;
@@ -606,7 +723,7 @@ private: System::Windows::Forms::Label^ label38;
 			this->label4->AutoSize = true;
 			this->label4->Font = (gcnew System::Drawing::Font(L"Bernard MT Condensed", 24, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label4->Location = System::Drawing::Point(17, 196);
+			this->label4->Location = System::Drawing::Point(17, 148);
 			this->label4->Name = L"label4";
 			this->label4->Size = System::Drawing::Size(97, 38);
 			this->label4->TabIndex = 33;
@@ -617,7 +734,7 @@ private: System::Windows::Forms::Label^ label38;
 			this->label3->AutoSize = true;
 			this->label3->Font = (gcnew System::Drawing::Font(L"Bernard MT Condensed", 24, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label3->Location = System::Drawing::Point(17, 118);
+			this->label3->Location = System::Drawing::Point(17, 84);
 			this->label3->Name = L"label3";
 			this->label3->Size = System::Drawing::Size(152, 38);
 			this->label3->TabIndex = 32;
@@ -639,7 +756,7 @@ private: System::Windows::Forms::Label^ label38;
 			this->label2->AutoSize = true;
 			this->label2->Font = (gcnew System::Drawing::Font(L"Bernard MT Condensed", 24, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label2->Location = System::Drawing::Point(27, 19);
+			this->label2->Location = System::Drawing::Point(17, 21);
 			this->label2->Name = L"label2";
 			this->label2->Size = System::Drawing::Size(65, 38);
 			this->label2->TabIndex = 31;
@@ -702,87 +819,6 @@ private: System::Windows::Forms::Label^ label38;
 			this->listBox1->Size = System::Drawing::Size(225, 327);
 			this->listBox1->TabIndex = 18;
 			this->listBox1->SelectedIndexChanged += gcnew System::EventHandler(this, &MyForm3::listBox1_SelectedIndexChanged);
-			// 
-			// panel8
-			// 
-			this->panel8->BackColor = System::Drawing::SystemColors::ActiveBorder;
-			this->panel8->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->panel8->Controls->Add(this->cmbPayment);
-			this->panel8->Controls->Add(this->txtCOST);
-			this->panel8->Controls->Add(this->txtCHANGE);
-			this->panel8->Controls->Add(this->label7);
-			this->panel8->Controls->Add(this->label6);
-			this->panel8->Controls->Add(this->label5);
-			this->panel8->Location = System::Drawing::Point(351, 12);
-			this->panel8->Name = L"panel8";
-			this->panel8->Size = System::Drawing::Size(316, 284);
-			this->panel8->TabIndex = 3;
-			// 
-			// cmbPayment
-			// 
-			this->cmbPayment->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 20.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->cmbPayment->FormattingEnabled = true;
-			this->cmbPayment->Location = System::Drawing::Point(190, 20);
-			this->cmbPayment->Name = L"cmbPayment";
-			this->cmbPayment->Size = System::Drawing::Size(103, 39);
-			this->cmbPayment->TabIndex = 41;
-			this->cmbPayment->SelectedIndexChanged += gcnew System::EventHandler(this, &MyForm3::cmbPayment_SelectedIndexChanged);
-			// 
-			// txtCOST
-			// 
-			this->txtCOST->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 20.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->txtCOST->Location = System::Drawing::Point(187, 118);
-			this->txtCOST->Name = L"txtCOST";
-			this->txtCOST->Size = System::Drawing::Size(107, 38);
-			this->txtCOST->TabIndex = 40;
-			this->txtCOST->TextAlign = System::Windows::Forms::HorizontalAlignment::Center;
-			this->txtCOST->TextChanged += gcnew System::EventHandler(this, &MyForm3::txtCOST_TextChanged);
-			// 
-			// txtCHANGE
-			// 
-			this->txtCHANGE->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 20.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->txtCHANGE->Location = System::Drawing::Point(187, 193);
-			this->txtCHANGE->Name = L"txtCHANGE";
-			this->txtCHANGE->Size = System::Drawing::Size(107, 38);
-			this->txtCHANGE->TabIndex = 39;
-			this->txtCHANGE->TextAlign = System::Windows::Forms::HorizontalAlignment::Center;
-			this->txtCHANGE->TextChanged += gcnew System::EventHandler(this, &MyForm3::txtCHANGE_TextChanged);
-			// 
-			// label7
-			// 
-			this->label7->AutoSize = true;
-			this->label7->Font = (gcnew System::Drawing::Font(L"Bernard MT Condensed", 24, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->label7->Location = System::Drawing::Point(3, 193);
-			this->label7->Name = L"label7";
-			this->label7->Size = System::Drawing::Size(114, 38);
-			this->label7->TabIndex = 38;
-			this->label7->Text = L"CHANGE";
-			// 
-			// label6
-			// 
-			this->label6->AutoSize = true;
-			this->label6->Font = (gcnew System::Drawing::Font(L"Bernard MT Condensed", 24, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->label6->Location = System::Drawing::Point(3, 18);
-			this->label6->Name = L"label6";
-			this->label6->Size = System::Drawing::Size(181, 38);
-			this->label6->TabIndex = 37;
-			this->label6->Text = L"PAY METHOD";
-			// 
-			// label5
-			// 
-			this->label5->AutoSize = true;
-			this->label5->Font = (gcnew System::Drawing::Font(L"Bernard MT Condensed", 24, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->label5->Location = System::Drawing::Point(12, 118);
-			this->label5->Name = L"label5";
-			this->label5->Size = System::Drawing::Size(78, 38);
-			this->label5->TabIndex = 34;
-			this->label5->Text = L"COST";
 			// 
 			// panel5
 			// 
@@ -1592,59 +1628,23 @@ private: System::Windows::Forms::Label^ label38;
 			// 
 			this->panel12->BackColor = System::Drawing::SystemColors::ActiveBorder;
 			this->panel12->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->panel12->Controls->Add(this->btnRESET);
-			this->panel12->Controls->Add(this->btnSave);
-			this->panel12->Controls->Add(this->btnEXIT);
 			this->panel12->Controls->Add(this->btnOPEN);
 			this->panel12->Controls->Add(this->btnTOTAL);
+			this->panel12->Controls->Add(this->btnEXIT);
+			this->panel12->Controls->Add(this->btnSave);
+			this->panel12->Controls->Add(this->btnRESET);
 			this->panel12->Location = System::Drawing::Point(8, 4);
 			this->panel12->Name = L"panel12";
 			this->panel12->Size = System::Drawing::Size(172, 379);
 			this->panel12->TabIndex = 4;
 			// 
-			// btnRESET
-			// 
-			this->btnRESET->Font = (gcnew System::Drawing::Font(L"Cooper Black", 21.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->btnRESET->Location = System::Drawing::Point(13, 87);
-			this->btnRESET->Name = L"btnRESET";
-			this->btnRESET->Size = System::Drawing::Size(135, 53);
-			this->btnRESET->TabIndex = 36;
-			this->btnRESET->Text = L"RESET";
-			this->btnRESET->UseVisualStyleBackColor = true;
-			this->btnRESET->Click += gcnew System::EventHandler(this, &MyForm3::btnRESET_Click);
-			// 
-			// btnSave
-			// 
-			this->btnSave->Font = (gcnew System::Drawing::Font(L"Cooper Black", 21.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->btnSave->Location = System::Drawing::Point(13, 238);
-			this->btnSave->Name = L"btnSave";
-			this->btnSave->Size = System::Drawing::Size(135, 53);
-			this->btnSave->TabIndex = 35;
-			this->btnSave->Text = L"Save";
-			this->btnSave->UseVisualStyleBackColor = true;
-			this->btnSave->Click += gcnew System::EventHandler(this, &MyForm3::btnSave_Click);
-			// 
-			// btnEXIT
-			// 
-			this->btnEXIT->Font = (gcnew System::Drawing::Font(L"Cooper Black", 21.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->btnEXIT->Location = System::Drawing::Point(13, 146);
-			this->btnEXIT->Name = L"btnEXIT";
-			this->btnEXIT->Size = System::Drawing::Size(135, 53);
-			this->btnEXIT->TabIndex = 34;
-			this->btnEXIT->Text = L"EXIT";
-			this->btnEXIT->UseVisualStyleBackColor = true;
-			this->btnEXIT->Click += gcnew System::EventHandler(this, &MyForm3::btnEXIT_Click);
-			// 
 			// btnOPEN
 			// 
 			this->btnOPEN->Font = (gcnew System::Drawing::Font(L"Cooper Black", 21.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->btnOPEN->Location = System::Drawing::Point(13, 297);
+			this->btnOPEN->Location = System::Drawing::Point(22, 319);
 			this->btnOPEN->Name = L"btnOPEN";
-			this->btnOPEN->Size = System::Drawing::Size(135, 53);
+			this->btnOPEN->Size = System::Drawing::Size(118, 53);
 			this->btnOPEN->TabIndex = 33;
 			this->btnOPEN->Text = L"OPEN";
 			this->btnOPEN->UseVisualStyleBackColor = true;
@@ -1654,13 +1654,49 @@ private: System::Windows::Forms::Label^ label38;
 			// 
 			this->btnTOTAL->Font = (gcnew System::Drawing::Font(L"Cooper Black", 21.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->btnTOTAL->Location = System::Drawing::Point(13, 28);
+			this->btnTOTAL->Location = System::Drawing::Point(17, 31);
 			this->btnTOTAL->Name = L"btnTOTAL";
-			this->btnTOTAL->Size = System::Drawing::Size(135, 53);
+			this->btnTOTAL->Size = System::Drawing::Size(132, 56);
 			this->btnTOTAL->TabIndex = 31;
 			this->btnTOTAL->Text = L"PAY";
 			this->btnTOTAL->UseVisualStyleBackColor = true;
 			this->btnTOTAL->Click += gcnew System::EventHandler(this, &MyForm3::btnTOTAL_Click);
+			// 
+			// btnEXIT
+			// 
+			this->btnEXIT->Font = (gcnew System::Drawing::Font(L"Cooper Black", 21.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->btnEXIT->Location = System::Drawing::Point(22, 152);
+			this->btnEXIT->Name = L"btnEXIT";
+			this->btnEXIT->Size = System::Drawing::Size(116, 53);
+			this->btnEXIT->TabIndex = 34;
+			this->btnEXIT->Text = L"EXIT";
+			this->btnEXIT->UseVisualStyleBackColor = true;
+			this->btnEXIT->Click += gcnew System::EventHandler(this, &MyForm3::btnEXIT_Click);
+			// 
+			// btnSave
+			// 
+			this->btnSave->Font = (gcnew System::Drawing::Font(L"Cooper Black", 21.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->btnSave->Location = System::Drawing::Point(21, 260);
+			this->btnSave->Name = L"btnSave";
+			this->btnSave->Size = System::Drawing::Size(117, 53);
+			this->btnSave->TabIndex = 35;
+			this->btnSave->Text = L"Save";
+			this->btnSave->UseVisualStyleBackColor = true;
+			this->btnSave->Click += gcnew System::EventHandler(this, &MyForm3::btnSave_Click);
+			// 
+			// btnRESET
+			// 
+			this->btnRESET->Font = (gcnew System::Drawing::Font(L"Cooper Black", 21.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->btnRESET->Location = System::Drawing::Point(17, 93);
+			this->btnRESET->Name = L"btnRESET";
+			this->btnRESET->Size = System::Drawing::Size(130, 53);
+			this->btnRESET->TabIndex = 36;
+			this->btnRESET->Text = L"RESET";
+			this->btnRESET->UseVisualStyleBackColor = true;
+			this->btnRESET->Click += gcnew System::EventHandler(this, &MyForm3::btnRESET_Click);
 			// 
 			// openFileDialog1
 			// 
@@ -1671,6 +1707,30 @@ private: System::Windows::Forms::Label^ label38;
 			this->imageList1->ColorDepth = System::Windows::Forms::ColorDepth::Depth8Bit;
 			this->imageList1->ImageSize = System::Drawing::Size(16, 16);
 			this->imageList1->TransparentColor = System::Drawing::Color::Transparent;
+			// 
+			// btnweeklysales
+			// 
+			this->btnweeklysales->Font = (gcnew System::Drawing::Font(L"Cooper Black", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->btnweeklysales->Location = System::Drawing::Point(199, 3);
+			this->btnweeklysales->Name = L"btnweeklysales";
+			this->btnweeklysales->Size = System::Drawing::Size(226, 42);
+			this->btnweeklysales->TabIndex = 38;
+			this->btnweeklysales->Text = L"WEEKLYSALES";
+			this->btnweeklysales->UseVisualStyleBackColor = true;
+			this->btnweeklysales->Click += gcnew System::EventHandler(this, &MyForm3::btnweeklysales_Click);
+			// 
+			// btnmonthlysales
+			// 
+			this->btnmonthlysales->Font = (gcnew System::Drawing::Font(L"Cooper Black", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->btnmonthlysales->Location = System::Drawing::Point(418, 44);
+			this->btnmonthlysales->Name = L"btnmonthlysales";
+			this->btnmonthlysales->Size = System::Drawing::Size(239, 42);
+			this->btnmonthlysales->TabIndex = 39;
+			this->btnmonthlysales->Text = L"MONTHLYSALES";
+			this->btnmonthlysales->UseVisualStyleBackColor = true;
+			this->btnmonthlysales->Click += gcnew System::EventHandler(this, &MyForm3::btnmonthlysales_Click);
 			// 
 			// MyForm3
 			// 
@@ -1693,13 +1753,14 @@ private: System::Windows::Forms::Label^ label38;
 			this->panel9->ResumeLayout(false);
 			this->panel9->PerformLayout();
 			this->panel2->ResumeLayout(false);
+			this->panel4->ResumeLayout(false);
+			this->panel8->ResumeLayout(false);
+			this->panel8->PerformLayout();
 			this->panel7->ResumeLayout(false);
 			this->panel7->PerformLayout();
 			this->panel3->ResumeLayout(false);
 			this->panel10->ResumeLayout(false);
 			this->panel10->PerformLayout();
-			this->panel8->ResumeLayout(false);
-			this->panel8->PerformLayout();
 			this->panel5->ResumeLayout(false);
 			this->panel11->ResumeLayout(false);
 			this->panel11->PerformLayout();
@@ -1756,6 +1817,61 @@ private: int fudgeeQty = 0, fudgeeIndex = -1;
 			  private: int hatdogQty = 0, hatdogIndex = -1;
 private: double subtotal = 0;
 
+	   private: bool orderRecorded = false;
+
+private: System::Void RecordSale(double sub, double tax, double total) {
+	String^ path = System::IO::Path::Combine(Application::StartupPath, "sales_log.csv");
+	System::Globalization::CultureInfo^ inv = System::Globalization::CultureInfo::InvariantCulture;
+
+	String^ line = DateTime::Now.ToString("yyyy-MM-dd HH:mm:ss", inv) + "," +
+		cmbPayment->SelectedItem->ToString() + "," +
+		sub.ToString("F2", inv) + "," +
+		tax.ToString("F2", inv) + "," +
+		total.ToString("F2", inv);
+
+	System::IO::File::AppendAllText(path, line + Environment::NewLine);
+}
+private: System::Void ShowSales(DateTime start, DateTime end, String^ title) {
+	String^ path = System::IO::Path::Combine(Application::StartupPath, "sales_log.csv");
+	if (!System::IO::File::Exists(path)) {
+		MessageBox::Show("No sales recorded yet.", title, MessageBoxButtons::OK, MessageBoxIcon::Information);
+		return;
+	}
+
+	System::Globalization::CultureInfo^ inv = System::Globalization::CultureInfo::InvariantCulture;
+	int count = 0;
+	double sumSub = 0, sumTax = 0, sumTotal = 0, cash = 0, gcash = 0;
+
+	for each(String ^ line in System::IO::File::ReadAllLines(path)) {
+		array<String^>^ p = line->Split(',');
+		if (p->Length < 5) continue;
+
+		DateTime dt;
+		double s, t, tt;
+		if (!DateTime::TryParse(p[0], inv, System::Globalization::DateTimeStyles::None, dt)) continue;
+		if (!Double::TryParse(p[2], System::Globalization::NumberStyles::Float, inv, s)) continue;
+		if (!Double::TryParse(p[3], System::Globalization::NumberStyles::Float, inv, t)) continue;
+		if (!Double::TryParse(p[4], System::Globalization::NumberStyles::Float, inv, tt)) continue;
+
+		if (DateTime::Compare(dt, start) < 0 || DateTime::Compare(dt, end) >= 0) continue;
+
+		count++;
+		sumSub += s;  sumTax += t;  sumTotal += tt;
+		if (p[1] == "GCASH") gcash += tt; else cash += tt;
+	}
+
+	String^ peso = Char::ConvertFromUtf32(0x20B1);
+	String^ msg =
+		"Period: " + start.ToString("MMM dd, yyyy") + " - " + end.AddDays(-1).ToString("MMM dd, yyyy") + "\n\n" +
+		"Transactions: " + count + "\n" +
+		"Subtotal: " + peso + sumSub.ToString("N2") + "\n" +
+		"Tax: " + peso + sumTax.ToString("N2") + "\n" +
+		"TOTAL SALES: " + peso + sumTotal.ToString("N2") + "\n\n" +
+		"Cash: " + peso + cash.ToString("N2") + "\n" +
+		"GCash: " + peso + gcash.ToString("N2");
+
+	MessageBox::Show(msg, title, MessageBoxButtons::OK, MessageBoxIcon::Information);
+}
 private: System::Void AddItem(String^ name, double price, int% qty, int% index) {
 	qty++;
 	subtotal += price;
@@ -1851,6 +1967,7 @@ private: System::Void imghotdog_Click(System::Object^ sender, System::EventArgs^
 }
 private: System::Void btnRESET_Click(System::Object^ sender, System::EventArgs^ e) {
 	listBox1->Items->Clear();
+	orderRecorded = false;
 
 	subtotal = 0;
 	kikiamQty = 0;     kikiamIndex = -1;
@@ -1945,28 +2062,42 @@ private: System::Void btnOPEN_Click(System::Object^ sender, System::EventArgs^ e
 	}
 }
 private: System::Void btnTOTAL_Click(System::Object ^ sender, System::EventArgs ^ e) {
-	double total, cost, change;
-
-	Button^ btn = safe_cast<Button^>(sender);
+	double total, cost, sub;
 	String^ peso = Char::ConvertFromUtf32(0x20B1);
 
-	String^ totalText = txtTOTAL->Text->Replace(peso, "₱")->Trim();
-	String^ costText = txtCOST->Text->Replace(peso, "₱")->Trim();
+	if (listBox1->Items->Count == 0) {
+		MessageBox::Show("There are no items in the order.");
+		return;
+	}
+
+	String^ totalText = txtTOTAL->Text->Replace(peso, "")->Trim();
+	String^ costText = txtCOST->Text->Replace(peso, "")->Trim();
+	String^ subText = txtSUB->Text->Replace(peso, "")->Trim();
 
 	if (!Double::TryParse(totalText, total) || !Double::TryParse(costText, cost)) {
 		MessageBox::Show("Please enter valid numbers for Total and Cost.");
 		return;
 	}
-
 	if (cost < total) {
 		MessageBox::Show("Cost is less than the total.");
 		return;
 	}
+	if (!Double::TryParse(subText, sub)) sub = total;
 
-	change = cost - total;
-
+	double change = cost - total;
 	txtCOST->Text = peso + cost.ToString("F2");
 	txtCHANGE->Text = peso + change.ToString("F2");
+
+	if (!orderRecorded) {
+		try {
+			RecordSale(sub, total - sub, total);
+			orderRecorded = true;
+		}
+		catch (Exception^ ex) {
+			MessageBox::Show("Could not record the sale: " + ex->Message, "Error",
+				MessageBoxButtons::OK, MessageBoxIcon::Error);
+		}
+	}
 
 
 }
@@ -2014,6 +2145,20 @@ private: System::Void label23_Click(System::Object^ sender, System::EventArgs^ e
 }
 private: System::Void MyForm3_Load(System::Object^ sender, System::EventArgs^ e) {
 }
+private: System::Void btnDailySales_Click(System::Object^ sender, System::EventArgs^ e) {
+	DateTime start = DateTime::Today;
+	ShowSales(start, start.AddDays(1), "Daily Sales");
+}
+private: System::Void btnweeklysales_Click(System::Object^ sender, System::EventArgs^ e) {
+	DateTime today = DateTime::Today;
+	int diff = ((int)today.DayOfWeek + 6) % 7;
+	DateTime start = today.AddDays(-diff);
+	ShowSales(start, start.AddDays(7), "Weekly Sales");
+}
+private: System::Void btnmonthlysales_Click(System::Object^ sender, System::EventArgs^ e) {
+	DateTime today = DateTime::Today;
+	DateTime start = DateTime(today.Year, today.Month, 1);
+	ShowSales(start, start.AddMonths(1), "Monthly Sales");
+}
 };
-// End of class MyForm3 declaration
 }
