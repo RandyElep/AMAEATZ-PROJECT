@@ -52,7 +52,7 @@ namespace SignInAccount {
 	protected:
 	private: System::Windows::Forms::Panel^ panel2;
 	private: System::Windows::Forms::Panel^ panel3;
-	private: System::Windows::Forms::Panel^ panel4;
+
 	private: System::Windows::Forms::Panel^ panel5;
 	private: System::Windows::Forms::Panel^ panel6;
 	private: System::Windows::Forms::Panel^ panel9;
@@ -245,7 +245,6 @@ private: System::Windows::Forms::Label^ label38;
 			this->label39 = (gcnew System::Windows::Forms::Label());
 			this->label38 = (gcnew System::Windows::Forms::Label());
 			this->listBox1 = (gcnew System::Windows::Forms::ListBox());
-			this->panel4 = (gcnew System::Windows::Forms::Panel());
 			this->panel8 = (gcnew System::Windows::Forms::Panel());
 			this->cmbPayment = (gcnew System::Windows::Forms::ComboBox());
 			this->txtCOST = (gcnew System::Windows::Forms::TextBox());
@@ -331,7 +330,6 @@ private: System::Windows::Forms::Label^ label38;
 			this->panel7->SuspendLayout();
 			this->panel3->SuspendLayout();
 			this->panel10->SuspendLayout();
-			this->panel4->SuspendLayout();
 			this->panel8->SuspendLayout();
 			this->panel5->SuspendLayout();
 			this->panel11->SuspendLayout();
@@ -373,9 +371,9 @@ private: System::Windows::Forms::Label^ label38;
 			// 
 			this->panel1->BorderStyle = System::Windows::Forms::BorderStyle::FixedSingle;
 			this->panel1->Controls->Add(this->panel9);
-			this->panel1->Location = System::Drawing::Point(29, 12);
+			this->panel1->Location = System::Drawing::Point(12, 12);
 			this->panel1->Name = L"panel1";
-			this->panel1->Size = System::Drawing::Size(296, 414);
+			this->panel1->Size = System::Drawing::Size(234, 370);
 			this->panel1->TabIndex = 0;
 			// 
 			// panel9
@@ -398,16 +396,16 @@ private: System::Windows::Forms::Label^ label38;
 			this->panel9->Controls->Add(this->label1);
 			this->panel9->Location = System::Drawing::Point(3, 4);
 			this->panel9->Name = L"panel9";
-			this->panel9->Size = System::Drawing::Size(281, 394);
+			this->panel9->Size = System::Drawing::Size(222, 352);
 			this->panel9->TabIndex = 3;
 			// 
 			// btnClear
 			// 
 			this->btnClear->Font = (gcnew System::Drawing::Font(L"Cooper Black", 21.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->btnClear->Location = System::Drawing::Point(198, 266);
+			this->btnClear->Location = System::Drawing::Point(152, 266);
 			this->btnClear->Name = L"btnClear";
-			this->btnClear->Size = System::Drawing::Size(59, 61);
+			this->btnClear->Size = System::Drawing::Size(54, 59);
 			this->btnClear->TabIndex = 30;
 			this->btnClear->Text = L"C";
 			this->btnClear->UseVisualStyleBackColor = true;
@@ -417,9 +415,9 @@ private: System::Windows::Forms::Label^ label38;
 			// 
 			this->btnDot->Font = (gcnew System::Drawing::Font(L"Cooper Black", 21.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->btnDot->Location = System::Drawing::Point(102, 266);
+			this->btnDot->Location = System::Drawing::Point(82, 266);
 			this->btnDot->Name = L"btnDot";
-			this->btnDot->Size = System::Drawing::Size(59, 61);
+			this->btnDot->Size = System::Drawing::Size(54, 59);
 			this->btnDot->TabIndex = 29;
 			this->btnDot->Text = L".";
 			this->btnDot->UseVisualStyleBackColor = true;
@@ -431,7 +429,7 @@ private: System::Windows::Forms::Label^ label38;
 				static_cast<System::Byte>(0)));
 			this->btn0->Location = System::Drawing::Point(10, 266);
 			this->btn0->Name = L"btn0";
-			this->btn0->Size = System::Drawing::Size(59, 61);
+			this->btn0->Size = System::Drawing::Size(54, 59);
 			this->btn0->TabIndex = 28;
 			this->btn0->Text = L"0";
 			this->btn0->UseVisualStyleBackColor = true;
@@ -441,9 +439,9 @@ private: System::Windows::Forms::Label^ label38;
 			// 
 			this->btn9->Font = (gcnew System::Drawing::Font(L"Cooper Black", 21.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->btn9->Location = System::Drawing::Point(198, 65);
+			this->btn9->Location = System::Drawing::Point(152, 68);
 			this->btn9->Name = L"btn9";
-			this->btn9->Size = System::Drawing::Size(59, 61);
+			this->btn9->Size = System::Drawing::Size(54, 59);
 			this->btn9->TabIndex = 27;
 			this->btn9->Text = L"9";
 			this->btn9->UseVisualStyleBackColor = true;
@@ -453,9 +451,9 @@ private: System::Windows::Forms::Label^ label38;
 			// 
 			this->btn8->Font = (gcnew System::Drawing::Font(L"Cooper Black", 21.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->btn8->Location = System::Drawing::Point(102, 65);
+			this->btn8->Location = System::Drawing::Point(82, 68);
 			this->btn8->Name = L"btn8";
-			this->btn8->Size = System::Drawing::Size(59, 61);
+			this->btn8->Size = System::Drawing::Size(54, 59);
 			this->btn8->TabIndex = 26;
 			this->btn8->Text = L"8";
 			this->btn8->UseVisualStyleBackColor = true;
@@ -465,9 +463,9 @@ private: System::Windows::Forms::Label^ label38;
 			// 
 			this->btn7->Font = (gcnew System::Drawing::Font(L"Cooper Black", 21.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->btn7->Location = System::Drawing::Point(10, 65);
+			this->btn7->Location = System::Drawing::Point(11, 68);
 			this->btn7->Name = L"btn7";
-			this->btn7->Size = System::Drawing::Size(59, 61);
+			this->btn7->Size = System::Drawing::Size(54, 59);
 			this->btn7->TabIndex = 25;
 			this->btn7->Text = L"7";
 			this->btn7->UseVisualStyleBackColor = true;
@@ -477,9 +475,9 @@ private: System::Windows::Forms::Label^ label38;
 			// 
 			this->btn6->Font = (gcnew System::Drawing::Font(L"Cooper Black", 21.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->btn6->Location = System::Drawing::Point(10, 132);
+			this->btn6->Location = System::Drawing::Point(11, 135);
 			this->btn6->Name = L"btn6";
-			this->btn6->Size = System::Drawing::Size(59, 61);
+			this->btn6->Size = System::Drawing::Size(54, 59);
 			this->btn6->TabIndex = 24;
 			this->btn6->Text = L"6";
 			this->btn6->UseVisualStyleBackColor = true;
@@ -489,9 +487,9 @@ private: System::Windows::Forms::Label^ label38;
 			// 
 			this->btn5->Font = (gcnew System::Drawing::Font(L"Cooper Black", 21.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->btn5->Location = System::Drawing::Point(102, 132);
+			this->btn5->Location = System::Drawing::Point(82, 132);
 			this->btn5->Name = L"btn5";
-			this->btn5->Size = System::Drawing::Size(59, 61);
+			this->btn5->Size = System::Drawing::Size(54, 59);
 			this->btn5->TabIndex = 23;
 			this->btn5->Text = L"5";
 			this->btn5->UseVisualStyleBackColor = true;
@@ -501,9 +499,9 @@ private: System::Windows::Forms::Label^ label38;
 			// 
 			this->btn4->Font = (gcnew System::Drawing::Font(L"Cooper Black", 21.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->btn4->Location = System::Drawing::Point(198, 132);
+			this->btn4->Location = System::Drawing::Point(152, 132);
 			this->btn4->Name = L"btn4";
-			this->btn4->Size = System::Drawing::Size(59, 61);
+			this->btn4->Size = System::Drawing::Size(54, 59);
 			this->btn4->TabIndex = 22;
 			this->btn4->Text = L"4";
 			this->btn4->UseVisualStyleBackColor = true;
@@ -513,9 +511,9 @@ private: System::Windows::Forms::Label^ label38;
 			// 
 			this->btn3->Font = (gcnew System::Drawing::Font(L"Cooper Black", 21.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->btn3->Location = System::Drawing::Point(198, 199);
+			this->btn3->Location = System::Drawing::Point(152, 201);
 			this->btn3->Name = L"btn3";
-			this->btn3->Size = System::Drawing::Size(59, 61);
+			this->btn3->Size = System::Drawing::Size(54, 59);
 			this->btn3->TabIndex = 21;
 			this->btn3->Text = L"3";
 			this->btn3->UseVisualStyleBackColor = true;
@@ -525,9 +523,9 @@ private: System::Windows::Forms::Label^ label38;
 			// 
 			this->btn2->Font = (gcnew System::Drawing::Font(L"Cooper Black", 21.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->btn2->Location = System::Drawing::Point(102, 199);
+			this->btn2->Location = System::Drawing::Point(82, 201);
 			this->btn2->Name = L"btn2";
-			this->btn2->Size = System::Drawing::Size(59, 61);
+			this->btn2->Size = System::Drawing::Size(54, 59);
 			this->btn2->TabIndex = 20;
 			this->btn2->Text = L"2";
 			this->btn2->UseVisualStyleBackColor = true;
@@ -539,7 +537,7 @@ private: System::Windows::Forms::Label^ label38;
 				static_cast<System::Byte>(0)));
 			this->btn1->Location = System::Drawing::Point(10, 199);
 			this->btn1->Name = L"btn1";
-			this->btn1->Size = System::Drawing::Size(59, 61);
+			this->btn1->Size = System::Drawing::Size(54, 59);
 			this->btn1->TabIndex = 19;
 			this->btn1->Text = L"1";
 			this->btn1->UseVisualStyleBackColor = true;
@@ -550,7 +548,7 @@ private: System::Windows::Forms::Label^ label38;
 			this->label1->AutoSize = true;
 			this->label1->Font = (gcnew System::Drawing::Font(L"Bernard MT Condensed", 24, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label1->Location = System::Drawing::Point(41, 9);
+			this->label1->Location = System::Drawing::Point(30, 17);
 			this->label1->Name = L"label1";
 			this->label1->Size = System::Drawing::Size(176, 38);
 			this->label1->TabIndex = 0;
@@ -559,10 +557,11 @@ private: System::Windows::Forms::Label^ label38;
 			// panel2
 			// 
 			this->panel2->BorderStyle = System::Windows::Forms::BorderStyle::FixedSingle;
+			this->panel2->Controls->Add(this->panel8);
 			this->panel2->Controls->Add(this->panel7);
 			this->panel2->Location = System::Drawing::Point(12, 443);
 			this->panel2->Name = L"panel2";
-			this->panel2->Size = System::Drawing::Size(364, 314);
+			this->panel2->Size = System::Drawing::Size(680, 314);
 			this->panel2->TabIndex = 1;
 			// 
 			// panel7
@@ -577,7 +576,7 @@ private: System::Windows::Forms::Label^ label38;
 			this->panel7->Controls->Add(this->label2);
 			this->panel7->Location = System::Drawing::Point(16, 12);
 			this->panel7->Name = L"panel7";
-			this->panel7->Size = System::Drawing::Size(329, 284);
+			this->panel7->Size = System::Drawing::Size(325, 284);
 			this->panel7->TabIndex = 2;
 			// 
 			// txtTOTAL
@@ -618,7 +617,7 @@ private: System::Windows::Forms::Label^ label38;
 			this->label3->AutoSize = true;
 			this->label3->Font = (gcnew System::Drawing::Font(L"Bernard MT Condensed", 24, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label3->Location = System::Drawing::Point(17, 121);
+			this->label3->Location = System::Drawing::Point(17, 118);
 			this->label3->Name = L"label3";
 			this->label3->Size = System::Drawing::Size(152, 38);
 			this->label3->TabIndex = 32;
@@ -628,7 +627,7 @@ private: System::Windows::Forms::Label^ label38;
 			// 
 			this->txtTAX->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 20.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->txtTAX->Location = System::Drawing::Point(186, 52);
+			this->txtTAX->Location = System::Drawing::Point(186, 21);
 			this->txtTAX->Name = L"txtTAX";
 			this->txtTAX->Size = System::Drawing::Size(108, 38);
 			this->txtTAX->TabIndex = 36;
@@ -640,7 +639,7 @@ private: System::Windows::Forms::Label^ label38;
 			this->label2->AutoSize = true;
 			this->label2->Font = (gcnew System::Drawing::Font(L"Bernard MT Condensed", 24, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label2->Location = System::Drawing::Point(17, 52);
+			this->label2->Location = System::Drawing::Point(27, 19);
 			this->label2->Name = L"label2";
 			this->label2->Size = System::Drawing::Size(65, 38);
 			this->label2->TabIndex = 31;
@@ -650,7 +649,7 @@ private: System::Windows::Forms::Label^ label38;
 			// 
 			this->panel3->BorderStyle = System::Windows::Forms::BorderStyle::FixedSingle;
 			this->panel3->Controls->Add(this->panel10);
-			this->panel3->Location = System::Drawing::Point(333, 12);
+			this->panel3->Location = System::Drawing::Point(252, 12);
 			this->panel3->Name = L"panel3";
 			this->panel3->Size = System::Drawing::Size(243, 414);
 			this->panel3->TabIndex = 1;
@@ -662,7 +661,7 @@ private: System::Windows::Forms::Label^ label38;
 			this->panel10->Controls->Add(this->label39);
 			this->panel10->Controls->Add(this->label38);
 			this->panel10->Controls->Add(this->listBox1);
-			this->panel10->Location = System::Drawing::Point(3, 4);
+			this->panel10->Location = System::Drawing::Point(4, 4);
 			this->panel10->Name = L"panel10";
 			this->panel10->Size = System::Drawing::Size(235, 405);
 			this->panel10->TabIndex = 4;
@@ -700,18 +699,9 @@ private: System::Windows::Forms::Label^ label38;
 			this->listBox1->ItemHeight = 19;
 			this->listBox1->Location = System::Drawing::Point(3, 50);
 			this->listBox1->Name = L"listBox1";
-			this->listBox1->Size = System::Drawing::Size(194, 289);
+			this->listBox1->Size = System::Drawing::Size(225, 327);
 			this->listBox1->TabIndex = 18;
 			this->listBox1->SelectedIndexChanged += gcnew System::EventHandler(this, &MyForm3::listBox1_SelectedIndexChanged);
-			// 
-			// panel4
-			// 
-			this->panel4->BorderStyle = System::Windows::Forms::BorderStyle::FixedSingle;
-			this->panel4->Controls->Add(this->panel8);
-			this->panel4->Location = System::Drawing::Point(382, 443);
-			this->panel4->Name = L"panel4";
-			this->panel4->Size = System::Drawing::Size(359, 314);
-			this->panel4->TabIndex = 1;
 			// 
 			// panel8
 			// 
@@ -723,7 +713,7 @@ private: System::Windows::Forms::Label^ label38;
 			this->panel8->Controls->Add(this->label7);
 			this->panel8->Controls->Add(this->label6);
 			this->panel8->Controls->Add(this->label5);
-			this->panel8->Location = System::Drawing::Point(7, 12);
+			this->panel8->Location = System::Drawing::Point(351, 12);
 			this->panel8->Name = L"panel8";
 			this->panel8->Size = System::Drawing::Size(316, 284);
 			this->panel8->TabIndex = 3;
@@ -733,7 +723,7 @@ private: System::Windows::Forms::Label^ label38;
 			this->cmbPayment->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 20.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->cmbPayment->FormattingEnabled = true;
-			this->cmbPayment->Location = System::Drawing::Point(187, 52);
+			this->cmbPayment->Location = System::Drawing::Point(190, 20);
 			this->cmbPayment->Name = L"cmbPayment";
 			this->cmbPayment->Size = System::Drawing::Size(103, 39);
 			this->cmbPayment->TabIndex = 41;
@@ -743,7 +733,7 @@ private: System::Windows::Forms::Label^ label38;
 			// 
 			this->txtCOST->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 20.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->txtCOST->Location = System::Drawing::Point(187, 121);
+			this->txtCOST->Location = System::Drawing::Point(187, 118);
 			this->txtCOST->Name = L"txtCOST";
 			this->txtCOST->Size = System::Drawing::Size(107, 38);
 			this->txtCOST->TabIndex = 40;
@@ -754,7 +744,7 @@ private: System::Windows::Forms::Label^ label38;
 			// 
 			this->txtCHANGE->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 20.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->txtCHANGE->Location = System::Drawing::Point(187, 196);
+			this->txtCHANGE->Location = System::Drawing::Point(187, 193);
 			this->txtCHANGE->Name = L"txtCHANGE";
 			this->txtCHANGE->Size = System::Drawing::Size(107, 38);
 			this->txtCHANGE->TabIndex = 39;
@@ -766,7 +756,7 @@ private: System::Windows::Forms::Label^ label38;
 			this->label7->AutoSize = true;
 			this->label7->Font = (gcnew System::Drawing::Font(L"Bernard MT Condensed", 24, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label7->Location = System::Drawing::Point(3, 196);
+			this->label7->Location = System::Drawing::Point(3, 193);
 			this->label7->Name = L"label7";
 			this->label7->Size = System::Drawing::Size(114, 38);
 			this->label7->TabIndex = 38;
@@ -777,7 +767,7 @@ private: System::Windows::Forms::Label^ label38;
 			this->label6->AutoSize = true;
 			this->label6->Font = (gcnew System::Drawing::Font(L"Bernard MT Condensed", 24, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label6->Location = System::Drawing::Point(3, 52);
+			this->label6->Location = System::Drawing::Point(3, 18);
 			this->label6->Name = L"label6";
 			this->label6->Size = System::Drawing::Size(181, 38);
 			this->label6->TabIndex = 37;
@@ -788,7 +778,7 @@ private: System::Windows::Forms::Label^ label38;
 			this->label5->AutoSize = true;
 			this->label5->Font = (gcnew System::Drawing::Font(L"Bernard MT Condensed", 24, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label5->Location = System::Drawing::Point(3, 121);
+			this->label5->Location = System::Drawing::Point(12, 118);
 			this->label5->Name = L"label5";
 			this->label5->Size = System::Drawing::Size(78, 38);
 			this->label5->TabIndex = 34;
@@ -798,9 +788,9 @@ private: System::Windows::Forms::Label^ label38;
 			// 
 			this->panel5->BorderStyle = System::Windows::Forms::BorderStyle::FixedSingle;
 			this->panel5->Controls->Add(this->panel11);
-			this->panel5->Location = System::Drawing::Point(790, 12);
+			this->panel5->Location = System::Drawing::Point(698, 12);
 			this->panel5->Name = L"panel5";
-			this->panel5->Size = System::Drawing::Size(1057, 768);
+			this->panel5->Size = System::Drawing::Size(941, 760);
 			this->panel5->TabIndex = 1;
 			// 
 			// panel11
@@ -869,7 +859,7 @@ private: System::Windows::Forms::Label^ label38;
 			this->panel11->Controls->Add(this->imgpancitcanton);
 			this->panel11->Location = System::Drawing::Point(3, 4);
 			this->panel11->Name = L"panel11";
-			this->panel11->Size = System::Drawing::Size(1049, 759);
+			this->panel11->Size = System::Drawing::Size(925, 749);
 			this->panel11->TabIndex = 5;
 			// 
 			// label37
@@ -879,7 +869,7 @@ private: System::Windows::Forms::Label^ label38;
 			this->label37->Font = (gcnew System::Drawing::Font(L"Cooper Black", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label37->ForeColor = System::Drawing::Color::SeaGreen;
-			this->label37->Location = System::Drawing::Point(898, 524);
+			this->label37->Location = System::Drawing::Point(777, 551);
 			this->label37->Name = L"label37";
 			this->label37->Size = System::Drawing::Size(75, 27);
 			this->label37->TabIndex = 62;
@@ -892,7 +882,7 @@ private: System::Windows::Forms::Label^ label38;
 			this->label36->Font = (gcnew System::Drawing::Font(L"Cooper Black", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label36->ForeColor = System::Drawing::Color::SeaGreen;
-			this->label36->Location = System::Drawing::Point(698, 524);
+			this->label36->Location = System::Drawing::Point(593, 551);
 			this->label36->Name = L"label36";
 			this->label36->Size = System::Drawing::Size(75, 27);
 			this->label36->TabIndex = 61;
@@ -905,7 +895,7 @@ private: System::Windows::Forms::Label^ label38;
 			this->label35->Font = (gcnew System::Drawing::Font(L"Cooper Black", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label35->ForeColor = System::Drawing::Color::SeaGreen;
-			this->label35->Location = System::Drawing::Point(491, 532);
+			this->label35->Location = System::Drawing::Point(427, 551);
 			this->label35->Name = L"label35";
 			this->label35->Size = System::Drawing::Size(75, 27);
 			this->label35->TabIndex = 60;
@@ -918,7 +908,7 @@ private: System::Windows::Forms::Label^ label38;
 			this->label34->Font = (gcnew System::Drawing::Font(L"Cooper Black", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label34->ForeColor = System::Drawing::Color::SeaGreen;
-			this->label34->Location = System::Drawing::Point(262, 524);
+			this->label34->Location = System::Drawing::Point(229, 551);
 			this->label34->Name = L"label34";
 			this->label34->Size = System::Drawing::Size(75, 27);
 			this->label34->TabIndex = 59;
@@ -932,7 +922,7 @@ private: System::Windows::Forms::Label^ label38;
 			this->label33->Font = (gcnew System::Drawing::Font(L"Cooper Black", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label33->ForeColor = System::Drawing::Color::SeaGreen;
-			this->label33->Location = System::Drawing::Point(73, 524);
+			this->label33->Location = System::Drawing::Point(59, 551);
 			this->label33->Name = L"label33";
 			this->label33->Size = System::Drawing::Size(75, 27);
 			this->label33->TabIndex = 58;
@@ -945,7 +935,7 @@ private: System::Windows::Forms::Label^ label38;
 			this->label32->Font = (gcnew System::Drawing::Font(L"Cooper Black", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label32->ForeColor = System::Drawing::Color::SeaGreen;
-			this->label32->Location = System::Drawing::Point(898, 257);
+			this->label32->Location = System::Drawing::Point(791, 303);
 			this->label32->Name = L"label32";
 			this->label32->Size = System::Drawing::Size(61, 27);
 			this->label32->TabIndex = 57;
@@ -959,7 +949,7 @@ private: System::Windows::Forms::Label^ label38;
 			this->label31->Font = (gcnew System::Drawing::Font(L"Cooper Black", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label31->ForeColor = System::Drawing::Color::SeaGreen;
-			this->label31->Location = System::Drawing::Point(698, 257);
+			this->label31->Location = System::Drawing::Point(615, 303);
 			this->label31->Name = L"label31";
 			this->label31->Size = System::Drawing::Size(61, 27);
 			this->label31->TabIndex = 56;
@@ -972,7 +962,7 @@ private: System::Windows::Forms::Label^ label38;
 			this->label30->Font = (gcnew System::Drawing::Font(L"Cooper Black", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label30->ForeColor = System::Drawing::Color::SeaGreen;
-			this->label30->Location = System::Drawing::Point(491, 259);
+			this->label30->Location = System::Drawing::Point(426, 303);
 			this->label30->Name = L"label30";
 			this->label30->Size = System::Drawing::Size(75, 27);
 			this->label30->TabIndex = 55;
@@ -985,7 +975,7 @@ private: System::Windows::Forms::Label^ label38;
 			this->label29->Font = (gcnew System::Drawing::Font(L"Cooper Black", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label29->ForeColor = System::Drawing::Color::SeaGreen;
-			this->label29->Location = System::Drawing::Point(262, 252);
+			this->label29->Location = System::Drawing::Point(229, 300);
 			this->label29->Name = L"label29";
 			this->label29->Size = System::Drawing::Size(75, 27);
 			this->label29->TabIndex = 54;
@@ -998,7 +988,7 @@ private: System::Windows::Forms::Label^ label38;
 			this->label28->Font = (gcnew System::Drawing::Font(L"Cooper Black", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label28->ForeColor = System::Drawing::Color::SeaGreen;
-			this->label28->Location = System::Drawing::Point(73, 257);
+			this->label28->Location = System::Drawing::Point(59, 300);
 			this->label28->Name = L"label28";
 			this->label28->Size = System::Drawing::Size(75, 27);
 			this->label28->TabIndex = 53;
@@ -1012,7 +1002,7 @@ private: System::Windows::Forms::Label^ label38;
 			this->label27->Font = (gcnew System::Drawing::Font(L"Cooper Black", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label27->ForeColor = System::Drawing::Color::SeaGreen;
-			this->label27->Location = System::Drawing::Point(898, 36);
+			this->label27->Location = System::Drawing::Point(791, 50);
 			this->label27->Name = L"label27";
 			this->label27->Size = System::Drawing::Size(75, 27);
 			this->label27->TabIndex = 52;
@@ -1025,7 +1015,7 @@ private: System::Windows::Forms::Label^ label38;
 			this->label26->Font = (gcnew System::Drawing::Font(L"Cooper Black", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label26->ForeColor = System::Drawing::Color::SeaGreen;
-			this->label26->Location = System::Drawing::Point(684, 33);
+			this->label26->Location = System::Drawing::Point(615, 54);
 			this->label26->Name = L"label26";
 			this->label26->Size = System::Drawing::Size(75, 27);
 			this->label26->TabIndex = 51;
@@ -1038,7 +1028,7 @@ private: System::Windows::Forms::Label^ label38;
 			this->label25->Font = (gcnew System::Drawing::Font(L"Cooper Black", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label25->ForeColor = System::Drawing::Color::SeaGreen;
-			this->label25->Location = System::Drawing::Point(491, 33);
+			this->label25->Location = System::Drawing::Point(426, 54);
 			this->label25->Name = L"label25";
 			this->label25->Size = System::Drawing::Size(75, 27);
 			this->label25->TabIndex = 50;
@@ -1051,7 +1041,7 @@ private: System::Windows::Forms::Label^ label38;
 			this->label24->Font = (gcnew System::Drawing::Font(L"Cooper Black", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label24->ForeColor = System::Drawing::Color::SeaGreen;
-			this->label24->Location = System::Drawing::Point(275, 33);
+			this->label24->Location = System::Drawing::Point(229, 54);
 			this->label24->Name = L"label24";
 			this->label24->Size = System::Drawing::Size(75, 27);
 			this->label24->TabIndex = 49;
@@ -1064,7 +1054,7 @@ private: System::Windows::Forms::Label^ label38;
 			this->label23->Font = (gcnew System::Drawing::Font(L"Cooper Black", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label23->ForeColor = System::Drawing::Color::SeaGreen;
-			this->label23->Location = System::Drawing::Point(73, 36);
+			this->label23->Location = System::Drawing::Point(73, 54);
 			this->label23->Name = L"label23";
 			this->label23->Size = System::Drawing::Size(61, 27);
 			this->label23->TabIndex = 48;
@@ -1077,11 +1067,11 @@ private: System::Windows::Forms::Label^ label38;
 			this->label22->Font = (gcnew System::Drawing::Font(L"Cooper Black", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label22->ForeColor = System::Drawing::Color::Black;
-			this->label22->Location = System::Drawing::Point(803, 482);
+			this->label22->Location = System::Drawing::Point(700, 513);
 			this->label22->Name = L"label22";
-			this->label22->Size = System::Drawing::Size(244, 27);
+			this->label22->Size = System::Drawing::Size(225, 27);
 			this->label22->TabIndex = 47;
-			this->label22->Text = L"MOUNTAIND DEW";
+			this->label22->Text = L"MOUNTAIN DEW";
 			// 
 			// label21
 			// 
@@ -1089,7 +1079,7 @@ private: System::Windows::Forms::Label^ label38;
 			this->label21->Font = (gcnew System::Drawing::Font(L"Cooper Black", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label21->ForeColor = System::Drawing::Color::Black;
-			this->label21->Location = System::Drawing::Point(698, 482);
+			this->label21->Location = System::Drawing::Point(583, 513);
 			this->label21->Name = L"label21";
 			this->label21->Size = System::Drawing::Size(85, 27);
 			this->label21->TabIndex = 46;
@@ -1101,11 +1091,11 @@ private: System::Windows::Forms::Label^ label38;
 			this->label20->Font = (gcnew System::Drawing::Font(L"Cooper Black", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label20->ForeColor = System::Drawing::Color::Black;
-			this->label20->Location = System::Drawing::Point(416, 482);
+			this->label20->Location = System::Drawing::Point(411, 513);
 			this->label20->Name = L"label20";
-			this->label20->Size = System::Drawing::Size(237, 27);
+			this->label20->Size = System::Drawing::Size(110, 27);
 			this->label20->TabIndex = 45;
-			this->label20->Text = L"BOTTLED WATER";
+			this->label20->Text = L"WATER";
 			// 
 			// label19
 			// 
@@ -1113,7 +1103,7 @@ private: System::Windows::Forms::Label^ label38;
 			this->label19->Font = (gcnew System::Drawing::Font(L"Cooper Black", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label19->ForeColor = System::Drawing::Color::Black;
-			this->label19->Location = System::Drawing::Point(232, 482);
+			this->label19->Location = System::Drawing::Point(209, 513);
 			this->label19->Name = L"label19";
 			this->label19->Size = System::Drawing::Size(165, 27);
 			this->label19->TabIndex = 44;
@@ -1125,7 +1115,7 @@ private: System::Windows::Forms::Label^ label38;
 			this->label18->Font = (gcnew System::Drawing::Font(L"Cooper Black", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label18->ForeColor = System::Drawing::Color::Black;
-			this->label18->Location = System::Drawing::Point(24, 482);
+			this->label18->Location = System::Drawing::Point(11, 513);
 			this->label18->Name = L"label18";
 			this->label18->Size = System::Drawing::Size(182, 27);
 			this->label18->TabIndex = 43;
@@ -1137,7 +1127,7 @@ private: System::Windows::Forms::Label^ label38;
 			this->label17->Font = (gcnew System::Drawing::Font(L"Cooper Black", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label17->ForeColor = System::Drawing::Color::Black;
-			this->label17->Location = System::Drawing::Point(887, 224);
+			this->label17->Location = System::Drawing::Point(754, 266);
 			this->label17->Name = L"label17";
 			this->label17->Size = System::Drawing::Size(129, 27);
 			this->label17->TabIndex = 42;
@@ -1149,7 +1139,7 @@ private: System::Windows::Forms::Label^ label38;
 			this->label16->Font = (gcnew System::Drawing::Font(L"Cooper Black", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label16->ForeColor = System::Drawing::Color::Black;
-			this->label16->Location = System::Drawing::Point(683, 224);
+			this->label16->Location = System::Drawing::Point(593, 264);
 			this->label16->Name = L"label16";
 			this->label16->Size = System::Drawing::Size(111, 27);
 			this->label16->TabIndex = 41;
@@ -1161,7 +1151,7 @@ private: System::Windows::Forms::Label^ label38;
 			this->label15->Font = (gcnew System::Drawing::Font(L"Cooper Black", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label15->ForeColor = System::Drawing::Color::Black;
-			this->label15->Location = System::Drawing::Point(447, 224);
+			this->label15->Location = System::Drawing::Point(382, 264);
 			this->label15->Name = L"label15";
 			this->label15->Size = System::Drawing::Size(192, 27);
 			this->label15->TabIndex = 40;
@@ -1173,7 +1163,7 @@ private: System::Windows::Forms::Label^ label38;
 			this->label14->Font = (gcnew System::Drawing::Font(L"Cooper Black", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label14->ForeColor = System::Drawing::Color::Black;
-			this->label14->Location = System::Drawing::Point(262, 224);
+			this->label14->Location = System::Drawing::Point(216, 266);
 			this->label14->Name = L"label14";
 			this->label14->Size = System::Drawing::Size(88, 27);
 			this->label14->TabIndex = 39;
@@ -1185,7 +1175,7 @@ private: System::Windows::Forms::Label^ label38;
 			this->label13->Font = (gcnew System::Drawing::Font(L"Cooper Black", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label13->ForeColor = System::Drawing::Color::Black;
-			this->label13->Location = System::Drawing::Point(59, 224);
+			this->label13->Location = System::Drawing::Point(38, 264);
 			this->label13->Name = L"label13";
 			this->label13->Size = System::Drawing::Size(136, 27);
 			this->label13->TabIndex = 38;
@@ -1197,11 +1187,11 @@ private: System::Windows::Forms::Label^ label38;
 			this->label12->Font = (gcnew System::Drawing::Font(L"Cooper Black", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label12->ForeColor = System::Drawing::Color::Black;
-			this->label12->Location = System::Drawing::Point(821, 0);
+			this->label12->Location = System::Drawing::Point(758, 14);
 			this->label12->Name = L"label12";
-			this->label12->Size = System::Drawing::Size(230, 27);
+			this->label12->Size = System::Drawing::Size(125, 27);
 			this->label12->TabIndex = 37;
-			this->label12->Text = L"PANCIT CANTON";
+			this->label12->Text = L"CANTON";
 			// 
 			// label11
 			// 
@@ -1209,7 +1199,7 @@ private: System::Windows::Forms::Label^ label38;
 			this->label11->Font = (gcnew System::Drawing::Font(L"Cooper Black", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label11->ForeColor = System::Drawing::Color::Black;
-			this->label11->Location = System::Drawing::Point(683, 0);
+			this->label11->Location = System::Drawing::Point(593, 17);
 			this->label11->Name = L"label11";
 			this->label11->Size = System::Drawing::Size(101, 27);
 			this->label11->TabIndex = 36;
@@ -1221,7 +1211,7 @@ private: System::Windows::Forms::Label^ label38;
 			this->label10->Font = (gcnew System::Drawing::Font(L"Cooper Black", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label10->ForeColor = System::Drawing::Color::Black;
-			this->label10->Location = System::Drawing::Point(479, 0);
+			this->label10->Location = System::Drawing::Point(411, 17);
 			this->label10->Name = L"label10";
 			this->label10->Size = System::Drawing::Size(91, 27);
 			this->label10->TabIndex = 35;
@@ -1233,7 +1223,7 @@ private: System::Windows::Forms::Label^ label38;
 			this->label9->Font = (gcnew System::Drawing::Font(L"Cooper Black", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label9->ForeColor = System::Drawing::Color::Black;
-			this->label9->Location = System::Drawing::Point(260, 0);
+			this->label9->Location = System::Drawing::Point(209, 17);
 			this->label9->Name = L"label9";
 			this->label9->Size = System::Drawing::Size(125, 27);
 			this->label9->TabIndex = 34;
@@ -1246,7 +1236,7 @@ private: System::Windows::Forms::Label^ label38;
 			this->label8->Font = (gcnew System::Drawing::Font(L"Cooper Black", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label8->ForeColor = System::Drawing::Color::Black;
-			this->label8->Location = System::Drawing::Point(59, 0);
+			this->label8->Location = System::Drawing::Point(43, 17);
 			this->label8->Name = L"label8";
 			this->label8->Size = System::Drawing::Size(105, 27);
 			this->label8->TabIndex = 33;
@@ -1258,7 +1248,7 @@ private: System::Windows::Forms::Label^ label38;
 			this->pictureBox15->BackColor = System::Drawing::SystemColors::Control;
 			this->pictureBox15->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox15.BackgroundImage")));
 			this->pictureBox15->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->pictureBox15->Location = System::Drawing::Point(48, 64);
+			this->pictureBox15->Location = System::Drawing::Point(16, 92);
 			this->pictureBox15->Name = L"pictureBox15";
 			this->pictureBox15->Size = System::Drawing::Size(132, 85);
 			this->pictureBox15->TabIndex = 32;
@@ -1269,7 +1259,7 @@ private: System::Windows::Forms::Label^ label38;
 			this->pictureBox14->BackColor = System::Drawing::SystemColors::Control;
 			this->pictureBox14->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox14.BackgroundImage")));
 			this->pictureBox14->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->pictureBox14->Location = System::Drawing::Point(249, 63);
+			this->pictureBox14->Location = System::Drawing::Point(203, 93);
 			this->pictureBox14->Name = L"pictureBox14";
 			this->pictureBox14->Size = System::Drawing::Size(131, 85);
 			this->pictureBox14->TabIndex = 31;
@@ -1280,7 +1270,7 @@ private: System::Windows::Forms::Label^ label38;
 			this->pictureBox13->BackColor = System::Drawing::SystemColors::Control;
 			this->pictureBox13->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox13.BackgroundImage")));
 			this->pictureBox13->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->pictureBox13->Location = System::Drawing::Point(463, 63);
+			this->pictureBox13->Location = System::Drawing::Point(394, 92);
 			this->pictureBox13->Name = L"pictureBox13";
 			this->pictureBox13->Size = System::Drawing::Size(131, 87);
 			this->pictureBox13->TabIndex = 30;
@@ -1291,7 +1281,7 @@ private: System::Windows::Forms::Label^ label38;
 			this->pictureBox12->BackColor = System::Drawing::SystemColors::Control;
 			this->pictureBox12->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox12.BackgroundImage")));
 			this->pictureBox12->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->pictureBox12->Location = System::Drawing::Point(671, 63);
+			this->pictureBox12->Location = System::Drawing::Point(584, 93);
 			this->pictureBox12->Name = L"pictureBox12";
 			this->pictureBox12->Size = System::Drawing::Size(129, 86);
 			this->pictureBox12->TabIndex = 29;
@@ -1302,7 +1292,7 @@ private: System::Windows::Forms::Label^ label38;
 			this->pictureBox11->BackColor = System::Drawing::SystemColors::Control;
 			this->pictureBox11->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox11.BackgroundImage")));
 			this->pictureBox11->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->pictureBox11->Location = System::Drawing::Point(870, 65);
+			this->pictureBox11->Location = System::Drawing::Point(759, 87);
 			this->pictureBox11->Name = L"pictureBox11";
 			this->pictureBox11->Size = System::Drawing::Size(134, 85);
 			this->pictureBox11->TabIndex = 28;
@@ -1313,9 +1303,9 @@ private: System::Windows::Forms::Label^ label38;
 			this->pictureBox10->BackColor = System::Drawing::SystemColors::Control;
 			this->pictureBox10->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox10.BackgroundImage")));
 			this->pictureBox10->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->pictureBox10->Location = System::Drawing::Point(29, 287);
+			this->pictureBox10->Location = System::Drawing::Point(16, 333);
 			this->pictureBox10->Name = L"pictureBox10";
-			this->pictureBox10->Size = System::Drawing::Size(161, 120);
+			this->pictureBox10->Size = System::Drawing::Size(132, 85);
 			this->pictureBox10->TabIndex = 27;
 			this->pictureBox10->TabStop = false;
 			// 
@@ -1324,9 +1314,9 @@ private: System::Windows::Forms::Label^ label38;
 			this->pictureBox9->BackColor = System::Drawing::SystemColors::Control;
 			this->pictureBox9->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox9.BackgroundImage")));
 			this->pictureBox9->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->pictureBox9->Location = System::Drawing::Point(463, 562);
+			this->pictureBox9->Location = System::Drawing::Point(394, 581);
 			this->pictureBox9->Name = L"pictureBox9";
-			this->pictureBox9->Size = System::Drawing::Size(131, 118);
+			this->pictureBox9->Size = System::Drawing::Size(132, 85);
 			this->pictureBox9->TabIndex = 26;
 			this->pictureBox9->TabStop = false;
 			// 
@@ -1335,9 +1325,9 @@ private: System::Windows::Forms::Label^ label38;
 			this->pictureBox8->BackColor = System::Drawing::SystemColors::Control;
 			this->pictureBox8->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox8.BackgroundImage")));
 			this->pictureBox8->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->pictureBox8->Location = System::Drawing::Point(484, 289);
+			this->pictureBox8->Location = System::Drawing::Point(394, 333);
 			this->pictureBox8->Name = L"pictureBox8";
-			this->pictureBox8->Size = System::Drawing::Size(98, 118);
+			this->pictureBox8->Size = System::Drawing::Size(132, 85);
 			this->pictureBox8->TabIndex = 25;
 			this->pictureBox8->TabStop = false;
 			// 
@@ -1346,9 +1336,9 @@ private: System::Windows::Forms::Label^ label38;
 			this->pictureBox7->BackColor = System::Drawing::SystemColors::Control;
 			this->pictureBox7->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox7.BackgroundImage")));
 			this->pictureBox7->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->pictureBox7->Location = System::Drawing::Point(684, 289);
+			this->pictureBox7->Location = System::Drawing::Point(581, 333);
 			this->pictureBox7->Name = L"pictureBox7";
-			this->pictureBox7->Size = System::Drawing::Size(116, 120);
+			this->pictureBox7->Size = System::Drawing::Size(132, 85);
 			this->pictureBox7->TabIndex = 24;
 			this->pictureBox7->TabStop = false;
 			// 
@@ -1357,9 +1347,9 @@ private: System::Windows::Forms::Label^ label38;
 			this->pictureBox6->BackColor = System::Drawing::SystemColors::Control;
 			this->pictureBox6->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox6.BackgroundImage")));
 			this->pictureBox6->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->pictureBox6->Location = System::Drawing::Point(877, 289);
+			this->pictureBox6->Location = System::Drawing::Point(759, 333);
 			this->pictureBox6->Name = L"pictureBox6";
-			this->pictureBox6->Size = System::Drawing::Size(127, 120);
+			this->pictureBox6->Size = System::Drawing::Size(132, 85);
 			this->pictureBox6->TabIndex = 23;
 			this->pictureBox6->TabStop = false;
 			// 
@@ -1368,9 +1358,9 @@ private: System::Windows::Forms::Label^ label38;
 			this->pictureBox5->BackColor = System::Drawing::SystemColors::Control;
 			this->pictureBox5->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox5.BackgroundImage")));
 			this->pictureBox5->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->pictureBox5->Location = System::Drawing::Point(29, 554);
+			this->pictureBox5->Location = System::Drawing::Point(16, 581);
 			this->pictureBox5->Name = L"pictureBox5";
-			this->pictureBox5->Size = System::Drawing::Size(176, 126);
+			this->pictureBox5->Size = System::Drawing::Size(132, 85);
 			this->pictureBox5->TabIndex = 22;
 			this->pictureBox5->TabStop = false;
 			// 
@@ -1379,9 +1369,9 @@ private: System::Windows::Forms::Label^ label38;
 			this->pictureBox4->BackColor = System::Drawing::SystemColors::Control;
 			this->pictureBox4->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox4.BackgroundImage")));
 			this->pictureBox4->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->pictureBox4->Location = System::Drawing::Point(236, 554);
+			this->pictureBox4->Location = System::Drawing::Point(202, 581);
 			this->pictureBox4->Name = L"pictureBox4";
-			this->pictureBox4->Size = System::Drawing::Size(144, 126);
+			this->pictureBox4->Size = System::Drawing::Size(132, 85);
 			this->pictureBox4->TabIndex = 21;
 			this->pictureBox4->TabStop = false;
 			// 
@@ -1390,9 +1380,9 @@ private: System::Windows::Forms::Label^ label38;
 			this->pictureBox3->BackColor = System::Drawing::SystemColors::Control;
 			this->pictureBox3->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox3.BackgroundImage")));
 			this->pictureBox3->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->pictureBox3->Location = System::Drawing::Point(236, 281);
+			this->pictureBox3->Location = System::Drawing::Point(202, 333);
 			this->pictureBox3->Name = L"pictureBox3";
-			this->pictureBox3->Size = System::Drawing::Size(161, 126);
+			this->pictureBox3->Size = System::Drawing::Size(132, 85);
 			this->pictureBox3->TabIndex = 20;
 			this->pictureBox3->TabStop = false;
 			this->pictureBox3->Click += gcnew System::EventHandler(this, &MyForm3::pictureBox3_Click);
@@ -1402,9 +1392,9 @@ private: System::Windows::Forms::Label^ label38;
 			this->pictureBox2->BackColor = System::Drawing::SystemColors::Control;
 			this->pictureBox2->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox2.BackgroundImage")));
 			this->pictureBox2->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->pictureBox2->Location = System::Drawing::Point(688, 554);
+			this->pictureBox2->Location = System::Drawing::Point(572, 588);
 			this->pictureBox2->Name = L"pictureBox2";
-			this->pictureBox2->Size = System::Drawing::Size(104, 126);
+			this->pictureBox2->Size = System::Drawing::Size(132, 85);
 			this->pictureBox2->TabIndex = 19;
 			this->pictureBox2->TabStop = false;
 			// 
@@ -1413,9 +1403,9 @@ private: System::Windows::Forms::Label^ label38;
 			this->pictureBox1->BackColor = System::Drawing::SystemColors::Control;
 			this->pictureBox1->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox1.BackgroundImage")));
 			this->pictureBox1->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->pictureBox1->Location = System::Drawing::Point(892, 554);
+			this->pictureBox1->Location = System::Drawing::Point(759, 588);
 			this->pictureBox1->Name = L"pictureBox1";
-			this->pictureBox1->Size = System::Drawing::Size(100, 126);
+			this->pictureBox1->Size = System::Drawing::Size(132, 85);
 			this->pictureBox1->TabIndex = 2;
 			this->pictureBox1->TabStop = false;
 			this->pictureBox1->Click += gcnew System::EventHandler(this, &MyForm3::pictureBox1_Click);
@@ -1424,7 +1414,7 @@ private: System::Windows::Forms::Label^ label38;
 			// 
 			this->imgkikiam->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"imgkikiam.BackgroundImage")));
 			this->imgkikiam->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->imgkikiam->Location = System::Drawing::Point(659, 413);
+			this->imgkikiam->Location = System::Drawing::Point(572, 424);
 			this->imgkikiam->Name = L"imgkikiam";
 			this->imgkikiam->Size = System::Drawing::Size(161, 66);
 			this->imgkikiam->TabIndex = 18;
@@ -1435,7 +1425,7 @@ private: System::Windows::Forms::Label^ label38;
 			// 
 			this->imgkanin->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"imgkanin.BackgroundImage")));
 			this->imgkanin->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->imgkanin->Location = System::Drawing::Point(659, 155);
+			this->imgkanin->Location = System::Drawing::Point(566, 185);
 			this->imgkanin->Name = L"imgkanin";
 			this->imgkanin->Size = System::Drawing::Size(161, 66);
 			this->imgkanin->TabIndex = 17;
@@ -1446,7 +1436,7 @@ private: System::Windows::Forms::Label^ label38;
 			// 
 			this->imgitlog->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"imgitlog.BackgroundImage")));
 			this->imgitlog->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->imgitlog->Location = System::Drawing::Point(452, 155);
+			this->imgitlog->Location = System::Drawing::Point(387, 183);
 			this->imgitlog->Name = L"imgitlog";
 			this->imgitlog->Size = System::Drawing::Size(161, 66);
 			this->imgitlog->TabIndex = 16;
@@ -1457,7 +1447,7 @@ private: System::Windows::Forms::Label^ label38;
 			// 
 			this->imggrahambar->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"imggrahambar.BackgroundImage")));
 			this->imggrahambar->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->imggrahambar->Location = System::Drawing::Point(452, 413);
+			this->imggrahambar->Location = System::Drawing::Point(387, 424);
 			this->imggrahambar->Name = L"imggrahambar";
 			this->imggrahambar->Size = System::Drawing::Size(161, 66);
 			this->imggrahambar->TabIndex = 15;
@@ -1468,7 +1458,7 @@ private: System::Windows::Forms::Label^ label38;
 			// 
 			this->imgcandies->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"imgcandies.BackgroundImage")));
 			this->imgcandies->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->imgcandies->Location = System::Drawing::Point(858, 413);
+			this->imgcandies->Location = System::Drawing::Point(748, 424);
 			this->imgcandies->Name = L"imgcandies";
 			this->imgcandies->Size = System::Drawing::Size(161, 66);
 			this->imgcandies->TabIndex = 14;
@@ -1483,7 +1473,7 @@ private: System::Windows::Forms::Label^ label38;
 			this->imgmountaindew->ErrorImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"imgmountaindew.ErrorImage")));
 			this->imgmountaindew->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"imgmountaindew.Image")));
 			this->imgmountaindew->InitialImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"imgmountaindew.InitialImage")));
-			this->imgmountaindew->Location = System::Drawing::Point(858, 686);
+			this->imgmountaindew->Location = System::Drawing::Point(744, 672);
 			this->imgmountaindew->Name = L"imgmountaindew";
 			this->imgmountaindew->Size = System::Drawing::Size(161, 66);
 			this->imgmountaindew->TabIndex = 13;
@@ -1494,7 +1484,7 @@ private: System::Windows::Forms::Label^ label38;
 			// 
 			this->imgcoke->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"imgcoke.BackgroundImage")));
 			this->imgcoke->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->imgcoke->Location = System::Drawing::Point(659, 686);
+			this->imgcoke->Location = System::Drawing::Point(566, 672);
 			this->imgcoke->Name = L"imgcoke";
 			this->imgcoke->Size = System::Drawing::Size(161, 66);
 			this->imgcoke->TabIndex = 12;
@@ -1505,7 +1495,7 @@ private: System::Windows::Forms::Label^ label38;
 			// 
 			this->imghotdog->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"imghotdog.BackgroundImage")));
 			this->imghotdog->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->imghotdog->Location = System::Drawing::Point(232, 155);
+			this->imghotdog->Location = System::Drawing::Point(202, 183);
 			this->imghotdog->Name = L"imghotdog";
 			this->imghotdog->Size = System::Drawing::Size(161, 66);
 			this->imghotdog->TabIndex = 11;
@@ -1516,7 +1506,7 @@ private: System::Windows::Forms::Label^ label38;
 			// 
 			this->imgbottledwater->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"imgbottledwater.BackgroundImage")));
 			this->imgbottledwater->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->imgbottledwater->Location = System::Drawing::Point(452, 686);
+			this->imgbottledwater->Location = System::Drawing::Point(387, 672);
 			this->imgbottledwater->Name = L"imgbottledwater";
 			this->imgbottledwater->Size = System::Drawing::Size(161, 66);
 			this->imgbottledwater->TabIndex = 10;
@@ -1527,7 +1517,7 @@ private: System::Windows::Forms::Label^ label38;
 			// 
 			this->imgchips->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"imgchips.BackgroundImage")));
 			this->imgchips->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->imgchips->Location = System::Drawing::Point(236, 413);
+			this->imgchips->Location = System::Drawing::Point(202, 424);
 			this->imgchips->Name = L"imgchips";
 			this->imgchips->Size = System::Drawing::Size(161, 66);
 			this->imgchips->TabIndex = 9;
@@ -1538,7 +1528,7 @@ private: System::Windows::Forms::Label^ label38;
 			// 
 			this->imgsiomai->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"imgsiomai.BackgroundImage")));
 			this->imgsiomai->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->imgsiomai->Location = System::Drawing::Point(29, 155);
+			this->imgsiomai->Location = System::Drawing::Point(16, 183);
 			this->imgsiomai->Name = L"imgsiomai";
 			this->imgsiomai->Size = System::Drawing::Size(161, 66);
 			this->imgsiomai->TabIndex = 8;
@@ -1549,7 +1539,7 @@ private: System::Windows::Forms::Label^ label38;
 			// 
 			this->imgnoodles->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"imgnoodles.BackgroundImage")));
 			this->imgnoodles->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->imgnoodles->Location = System::Drawing::Point(29, 413);
+			this->imgnoodles->Location = System::Drawing::Point(16, 424);
 			this->imgnoodles->Name = L"imgnoodles";
 			this->imgnoodles->Size = System::Drawing::Size(161, 66);
 			this->imgnoodles->TabIndex = 7;
@@ -1560,7 +1550,7 @@ private: System::Windows::Forms::Label^ label38;
 			// 
 			this->imgfugeebar->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"imgfugeebar.BackgroundImage")));
 			this->imgfugeebar->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->imgfugeebar->Location = System::Drawing::Point(29, 686);
+			this->imgfugeebar->Location = System::Drawing::Point(13, 672);
 			this->imgfugeebar->Name = L"imgfugeebar";
 			this->imgfugeebar->Size = System::Drawing::Size(161, 66);
 			this->imgfugeebar->TabIndex = 6;
@@ -1571,7 +1561,7 @@ private: System::Windows::Forms::Label^ label38;
 			// 
 			this->imgempanada->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"imgempanada.BackgroundImage")));
 			this->imgempanada->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->imgempanada->Location = System::Drawing::Point(232, 686);
+			this->imgempanada->Location = System::Drawing::Point(202, 672);
 			this->imgempanada->Name = L"imgempanada";
 			this->imgempanada->Size = System::Drawing::Size(161, 66);
 			this->imgempanada->TabIndex = 5;
@@ -1582,7 +1572,7 @@ private: System::Windows::Forms::Label^ label38;
 			// 
 			this->imgpancitcanton->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"imgpancitcanton.BackgroundImage")));
 			this->imgpancitcanton->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->imgpancitcanton->Location = System::Drawing::Point(858, 155);
+			this->imgpancitcanton->Location = System::Drawing::Point(748, 185);
 			this->imgpancitcanton->Name = L"imgpancitcanton";
 			this->imgpancitcanton->Size = System::Drawing::Size(161, 66);
 			this->imgpancitcanton->TabIndex = 4;
@@ -1593,7 +1583,7 @@ private: System::Windows::Forms::Label^ label38;
 			// 
 			this->panel6->BorderStyle = System::Windows::Forms::BorderStyle::FixedSingle;
 			this->panel6->Controls->Add(this->panel12);
-			this->panel6->Location = System::Drawing::Point(582, 12);
+			this->panel6->Location = System::Drawing::Point(501, 12);
 			this->panel6->Name = L"panel6";
 			this->panel6->Size = System::Drawing::Size(193, 399);
 			this->panel6->TabIndex = 1;
@@ -1684,18 +1674,21 @@ private: System::Windows::Forms::Label^ label38;
 			// 
 			// MyForm3
 			// 
-			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
-			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
+			this->AutoScaleDimensions = System::Drawing::SizeF(96, 96);
+			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Dpi;
+			this->AutoScroll = true;
 			this->BackColor = System::Drawing::Color::IndianRed;
-			this->ClientSize = System::Drawing::Size(1878, 808);
+			this->ClientSize = System::Drawing::Size(1646, 778);
 			this->Controls->Add(this->panel6);
 			this->Controls->Add(this->panel5);
-			this->Controls->Add(this->panel4);
 			this->Controls->Add(this->panel3);
 			this->Controls->Add(this->panel2);
 			this->Controls->Add(this->panel1);
 			this->Name = L"MyForm3";
+			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
 			this->Text = L"AMAZEats";
+			this->WindowState = System::Windows::Forms::FormWindowState::Maximized;
+			this->Load += gcnew System::EventHandler(this, &MyForm3::MyForm3_Load);
 			this->panel1->ResumeLayout(false);
 			this->panel9->ResumeLayout(false);
 			this->panel9->PerformLayout();
@@ -1705,7 +1698,6 @@ private: System::Windows::Forms::Label^ label38;
 			this->panel3->ResumeLayout(false);
 			this->panel10->ResumeLayout(false);
 			this->panel10->PerformLayout();
-			this->panel4->ResumeLayout(false);
 			this->panel8->ResumeLayout(false);
 			this->panel8->PerformLayout();
 			this->panel5->ResumeLayout(false);
@@ -2019,6 +2011,8 @@ private: System::Void label34_Click(System::Object^ sender, System::EventArgs^ e
 private: System::Void label32_Click(System::Object^ sender, System::EventArgs^ e) {
 }
 private: System::Void label23_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void MyForm3_Load(System::Object^ sender, System::EventArgs^ e) {
 }
 };
 // End of class MyForm3 declaration
